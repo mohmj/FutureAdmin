@@ -23,28 +23,9 @@ class LoginActivity : AppCompatActivity() {
             var email=login_activity_email_edit_text.text.toString()
             var password=login_activity_password_edit_text.text.toString()
             auth.signInWithEmailAndPassword(email,password).addOnSuccessListener {
-                uid=auth.uid
-                var reference=Firebase.database.getReference("users")
-                reference.addListenerForSingleValueEvent(object : ValueEventListener{
-                    override fun onCancelled(error: DatabaseError) {
-                        TODO("Not yet implemented")
-                    }
-
-                    override fun onDataChange(snapshot: DataSnapshot) {
-                        snapshot.children.forEach(){
-                            var user=it.getValue(UserInformation::class.java)
-                            if(user != null){
-                                if(user.property=="admin"){
-
-
-                                }
-                            }
-                        }
-
-                    }
-
-                })
-
+                var intetn=Intent(this,MainActivity::class.java)
+                intetn.flags=Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intetn)
             }
         }
     }
