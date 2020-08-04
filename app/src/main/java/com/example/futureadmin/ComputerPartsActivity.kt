@@ -14,6 +14,9 @@ class ComputerPartsActivity : AppCompatActivity() {
 
         var category=Categories()
 
+        computer_parts_activity_desktop_container_layout.setOnClickListener(){
+            addProductActivity(category.desktop,"Desktop")
+        }
         computer_parts_activity_CPU_container_layout.setOnClickListener(){
             addProductActivity(category.CPU,"CPU")
         }

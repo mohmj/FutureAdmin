@@ -20,7 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         var category=Categories()
 
-
+        main_activity_special_offers_container_layout.setOnClickListener(){
+            addProductActivity(category.special_offers,"Special offers")
+        }
         main_activity_computer_container_layout.setOnClickListener(){
             startActivity(Intent(this,ComputerPartsActivity::class.java))
         }

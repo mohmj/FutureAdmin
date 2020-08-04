@@ -15,4 +15,6 @@ class Categories {
     var headphone="headphone"
     var sound_card="sound_card"
     var buy_and_sale_accounts="buy_and_sale_accounts"
+    var desktop="desktop"
+    var special_offers="special_offers"
 }

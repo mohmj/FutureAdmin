@@ -3,6 +3,7 @@ package com.example.futureadmin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.futureadmin.Models.UserInformation
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
@@ -26,6 +27,8 @@ class LoginActivity : AppCompatActivity() {
                 var intetn=Intent(this,MainActivity::class.java)
                 intetn.flags=Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intetn)
+            }.addOnFailureListener {
+                Toast.makeText(this,"${it.message}",Toast.LENGTH_LONG).show()
             }
         }
     }
