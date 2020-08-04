@@ -3,6 +3,7 @@ package com.example.futureadmin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.futureadmin.Services.Categories
 import com.example.futureadmin.Services.Database
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -17,18 +18,20 @@ class MainActivity : AppCompatActivity() {
 
             checkLogin()
 
+        var category=Categories()
+
 
         main_activity_computer_container_layout.setOnClickListener(){
-
+            startActivity(Intent(this,ComputerPartsActivity::class.java))
         }
         main_activity_laptop_container_layout.setOnClickListener(){
-            addProductActivity("laptop","Laptop")
+            addProductActivity(category.laptop,"Laptop")
         }
         main_activity_console_container_layout.setOnClickListener(){
-            addProductActivity("console","Console")
+            addProductActivity(category.console,"Console")
         }
         main_activity_programs_and_games_container_layout.setOnClickListener(){
-            addProductActivity("programs_and_games","Programs and games")
+            addProductActivity(category.programs_and_games,"Programs and games")
         }
         main_activity_signout_container_layout.setOnClickListener(){
             auth.signOut()
