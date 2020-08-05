@@ -1,14 +1,14 @@
 package com.example.futureadmin
 
 import android.app.Activity
+import android.app.ProgressDialog
 import android.content.Intent
 import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.ParcelFileDescriptor
 import android.provider.MediaStore
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.futureadmin.Models.ProductInformation
 import com.example.futureadmin.Services.Database
 import com.google.firebase.database.ktx.database
@@ -27,6 +27,12 @@ class AddProductActivity : AppCompatActivity() {
         var category = intent.getStringExtra(Database().category).toString()
 
         add_product_activity_button.setOnClickListener() {
+
+            val progressDialog= ProgressDialog(this)
+            progressDialog.setTitle("Wait")
+            progressDialog.setMessage("Please wait product is adding now")
+            progressDialog.show()
+
             var productName = add_product_activity_name_edit_text.text.toString()
             var productPrice = add_product_activity_price_edit_text.text.toString()
             var productDescription = add_product_activity_description_edit_text.text.toString()
@@ -44,6 +50,7 @@ class AddProductActivity : AppCompatActivity() {
                                     productDescription
                                 )
                             ).addOnSuccessListener {
+                                progressDialog.hide()
                                 Toast.makeText(this, "The item was added successfully", Toast.LENGTH_SHORT)
                                     .show()
                                 var intent=Intent(this,MainActivity::class.java)
