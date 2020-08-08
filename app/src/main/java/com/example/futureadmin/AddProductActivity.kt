@@ -24,7 +24,7 @@ class AddProductActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_product)
         supportActionBar?.title = intent.getStringExtra(Database().categoryTitle)
-        var category = intent.getStringExtra(Database().category).toString()
+        var productCategory = intent.getStringExtra(Database().category).toString()
 
         add_product_activity_button.setOnClickListener() {
 
@@ -36,15 +36,16 @@ class AddProductActivity : AppCompatActivity() {
             var productName = add_product_activity_name_edit_text.text.toString()
             var productPrice = add_product_activity_price_edit_text.text.toString()
             var productDescription = add_product_activity_description_edit_text.text.toString()
-            var storageReference = Firebase.storage.getReference("$category/$productName")
+            var storageReference = Firebase.storage.getReference("$productCategory/$productName")
             if (productName.isNotEmpty() && productPrice.isNotEmpty() && productDescription.isNotEmpty()) {
                 storageReference.putFile(selectImageUri!!).addOnSuccessListener {
                         storageReference.downloadUrl.addOnSuccessListener {
                             var productImageLink=it.toString()
-                            var reference = Firebase.database.getReference("products/$category").push()
+                            var reference = Firebase.database.getReference("products/$productCategory").push()
                             reference.setValue(
                                 ProductInformation(
                                     productName,
+                                    productCategory,
                                     productPrice,
                                     productImageLink,
                                     productDescription

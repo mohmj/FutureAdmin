@@ -6,9 +6,9 @@ import com.google.firebase.database.ktx.database
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class ProductInformation(var name:String, var price:String, var imageLink:String,var description: String):
+class ProductInformation(var name:String,var category:String ,var price:String,var quantity:Int, var imageLink:String,var description: String):
     Parcelable {
-    constructor():this("","","","")
+    constructor():this("","","",1,"","")
 }
 
 //

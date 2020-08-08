@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<resources>-->
-<!--    <color name="colorPrimary">#742280</color>-->
-<!--    <color name="colorPrimaryDark">#7b0f8a</color>-->
-<!--    <color name="colorAccent">#a316b8</color>-->
-<!--    &lt;!&ndash;    &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--    <color name="Default5">#7b0f8a</color>-->
-<!--    <color name="Default4">#742280</color>-->
-<!--    <color name="Default3">#a316b8</color>-->
-<!--    <color name="Default2">#cd1ae8</color>-->
-<!--    <color name="Default1">#736F72</color>-->
-<!--    <color name="Default_white">#F0F0F0</color>-->
-<!--    <color name="Default_red">#F80000</color>-->
-<!--</resources>-->
-
 <resources>
-<color name="colorPrimary">#4444b8</color>
-<color name="colorPrimaryDark">#222244</color>
-<color name="colorAccent">#5f5fde</color>
-<!--    &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-<color name="Default5">#222244</color>
-<color name="Default4">#4444b8</color>
-<color name="Default3">#5f5fde</color>
-<color name="Default2">#a6a6fe</color>
-<color name="Default1">#6f6f73</color>
-<color name="Default_white">#F0F0F0</color>
-<color name="Default_red">#F80000</color>
+    <color name="colorPrimary">#742280</color>
+    <color name="colorPrimaryDark">#7b0f8a</color>
+    <color name="colorAccent">#a316b8</color>
+
+    <color name="Default5">#7b0f8a</color>
+    <color name="Default4">#742280</color>
+    <color name="Default3">#a316b8</color>
+    <color name="Default2">#cd1ae8</color>
+    <color name="Default1">#736F72</color>
+    <color name="Default_white">#F0F0F0</color>
+    <color name="Default_red">#F80000</color>
 </resources>
+
+<!--<resources>-->
+<!--<color name="colorPrimary">#4444b8</color>-->
+<!--<color name="colorPrimaryDark">#222244</color>-->
+<!--<color name="colorAccent">#5f5fde</color>-->
+
+<!--<color name="Default5">#222244</color>-->
+<!--<color name="Default4">#4444b8</color>-->
+<!--<color name="Default3">#5f5fde</color>-->
+<!--<color name="Default2">#a6a6fe</color>-->
+<!--<color name="Default1">#6f6f73</color>-->
+<!--<color name="Default_white">#F0F0F0</color>-->
+<!--<color name="Default_red">#F80000</color>-->
+<!--</resources>-->
