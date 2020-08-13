@@ -36,8 +36,9 @@ class AddProductActivity : AppCompatActivity() {
             var productName = add_product_activity_name_edit_text.text.toString()
             var productPrice = add_product_activity_price_edit_text.text.toString()
             var productDescription = add_product_activity_description_edit_text.text.toString()
+            var quantity=add_product_activity_quantity_edit_text.text.toString()
             var storageReference = Firebase.storage.getReference("$productCategory/$productName")
-            if (productName.isNotEmpty() && productPrice.isNotEmpty() && productDescription.isNotEmpty()) {
+            if (productName.isNotEmpty() && productPrice.isNotEmpty() && productDescription.isNotEmpty() && quantity.isNotEmpty()) {
                 storageReference.putFile(selectImageUri!!).addOnSuccessListener {
                         storageReference.downloadUrl.addOnSuccessListener {
                             var productImageLink=it.toString()
@@ -47,6 +48,7 @@ class AddProductActivity : AppCompatActivity() {
                                     productName,
                                     productCategory,
                                     productPrice,
+                                    quantity.toInt(),
                                     productImageLink,
                                     productDescription
                                 )
@@ -59,6 +61,7 @@ class AddProductActivity : AppCompatActivity() {
                                 startActivity(intent)
 
                             }.addOnFailureListener() {
+                                progressDialog.hide()
                                 Toast.makeText(this, "${it.message}", Toast.LENGTH_SHORT).show()
                             }
                         }
@@ -66,6 +69,7 @@ class AddProductActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Please fill data and choose image.", Toast.LENGTH_SHORT)
                     .show()
+                progressDialog.hide()
             }
         }
             //----------------------------------------------------------------------------------------------------------------------
