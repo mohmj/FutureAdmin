@@ -18,16 +18,16 @@ class ComputerPartsActivity : AppCompatActivity() {
             addProductActivity(category.desktop,"Desktop")
         }
         computer_parts_activity_CPU_container_layout.setOnClickListener(){
-            addProductActivity(category.CPU,"CPU")
+            startActivity(Intent(this,AddProductComputerIntelCPUActivity::class.java))
         }
         computer_parts_activity_GPU_container_layout.setOnClickListener(){
             addProductActivity(category.GPU,"GPU")
         }
         computer_parts_activity_motherboard_container_layout.setOnClickListener(){
-            addProductActivity(category.motherboard,"Motherboard")
+            startActivity(Intent(this,AddProductComputerMohterboardActivity::class.java))
         }
         computer_parts_activity_RAM_container_layout.setOnClickListener(){
-            addProductActivity(category.RAM,"RAM")
+            startActivity(Intent(this,AddProductComputerRamActivity::class.java))
         }
         computer_parts_activity_hardDisk_container_layout.setOnClickListener(){
             addProductActivity(category.hard_disk,"Hard disk")

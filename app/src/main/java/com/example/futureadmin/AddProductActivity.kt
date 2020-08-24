@@ -59,7 +59,6 @@ class AddProductActivity : AppCompatActivity() {
                                 var intent=Intent(this,MainActivity::class.java)
                                 intent.flags=Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                                 startActivity(intent)
-
                             }.addOnFailureListener() {
                                 progressDialog.hide()
                                 Toast.makeText(this, "${it.message}", Toast.LENGTH_SHORT).show()

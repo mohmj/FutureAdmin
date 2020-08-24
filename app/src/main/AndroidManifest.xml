@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ComputerPartsActivity"></activity>
+        <activity android:name=".AddProductComputerRamActivity"></activity>
+        <activity android:name=".AddProductComputerMohterboardActivity" />
+        <activity android:name=".AddProductComputerIntelCPUActivity" />
+        <activity android:name=".AddWorkerActivity" />
+        <activity android:name=".ComputerPartsActivity" />
         <activity android:name=".AddProductActivity" />
         <activity
             android:name=".LoginActivity"

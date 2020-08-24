@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         var category=Categories()
 
+        cpu_intel.setOnClickListener(){
+            startActivity(Intent(this,AddProductComputerIntelCPUActivity::class.java))
+        }
+
         main_activity_special_offers_container_layout.setOnClickListener(){
             addProductActivity(category.special_offers,"Special offers")
         }
@@ -38,6 +42,10 @@ class MainActivity : AppCompatActivity() {
         main_activity_signout_container_layout.setOnClickListener(){
             auth.signOut()
             checkLogin()
+        }
+
+        button.setOnClickListener(){
+            startActivity(Intent(this,AddWorkerActivity::class.java))
         }
 
 

@@ -11,6 +11,13 @@
     <color name="Default1">#736F72</color>
     <color name="Default_white">#F0F0F0</color>
     <color name="Default_red">#F80000</color>
+
+
+    <color name="Default_background">#ffffff</color>
+    <color name="Default_font_color_dark">#000000</color>
+    <color name="Default_font_color_light">#ffffff</color>
+    <color name="message_from_background">#BDB9BC</color>
+    <color name="message_to_background">#D94444</color>
 </resources>
 
 <!--<resources>-->
