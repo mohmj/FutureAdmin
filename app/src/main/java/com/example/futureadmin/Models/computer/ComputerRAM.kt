@@ -1,5 +1,9 @@
 package com.example.futureadmin.Models.computer
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 class ComputerRAM (
     var productNumbrer:String,
     var name : String,
@@ -15,7 +19,8 @@ class ComputerRAM (
     var singleGiga : Int,
     var totalGiga : Int,
     var CASLatency: Int
-) {
+):
+    Parcelable {
     constructor():this( "","","",0.0,0,"",
                         "","",0,0,0,
                         0,0,0)
