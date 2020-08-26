@@ -81,8 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:background="@drawable/default_edit_text"
-                android:padding="10dp" />
+                android:background="@drawable/default_edit_text" />
 
             <EditText
                 android:id="@+id/app_product_computer_CPU_activity_number_of_cores_edit_text"
