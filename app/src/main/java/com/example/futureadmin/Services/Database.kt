@@ -15,5 +15,6 @@ class Database {
     var motherboard_chipset_reference=Firebase.database.getReference("$builder/chipset")
     var RAM_type_reference=Firebase.database.getReference("$builder/ram_type")
     var RAM_pins_reference=Firebase.database.getReference("$builder/ram_pins")
+    var case_type=Firebase.database.getReference("$builder/case_type")
 
 }

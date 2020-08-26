@@ -107,7 +107,7 @@ class AddProductComputerRamActivity : AppCompatActivity() {
                         productNumber,
                         name,
                         category,
-                        price,
+                        price.toDouble(),
                         quantity,
                         imageLink,
                         description,

@@ -8,7 +8,7 @@ class ComputerCPU(
     var productNumbrer:String,
     var name : String,
     var category : String,
-    var  price : String,
+    var  price : Double,
     var quantity : Int,
     var  imageLink : String,
     var description : String,
@@ -22,6 +22,7 @@ class ComputerCPU(
     ):
     Parcelable {
 
-    constructor():this("","","","",0,"","","",0,0.0,0.0,0,"")
+    constructor():this("","","",0.0
+        ,0,"","","",0,0.0,0.0,0,"")
 
 }

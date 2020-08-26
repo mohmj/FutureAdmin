@@ -78,7 +78,7 @@ class AddProductComputerIntelCPUActivity : AppCompatActivity() {
                     databaseReference.setValue(ComputerCPU(productNumber,
                     name,
                         category,
-                        price,
+                        price.toDouble(),
                         quantity,
                         imageLink,
                         description,

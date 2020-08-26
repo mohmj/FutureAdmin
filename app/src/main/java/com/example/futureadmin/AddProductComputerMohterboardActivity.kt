@@ -159,7 +159,7 @@ class AddProductComputerMohterboardActivity : AppCompatActivity() {
                             productNumber,
                             name,
                             category,
-                            price,
+                            price.toDouble(),
                             quantity,
                             description,
                             imageLink,

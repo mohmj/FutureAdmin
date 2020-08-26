@@ -39,7 +39,7 @@ class ComputerPartsActivity : AppCompatActivity() {
             addProductActivity(category.air_cooler,"Air cooling")
         }
         computer_parts_activity_cases_container_layout.setOnClickListener(){
-            addProductActivity(category.case,"Case")
+            startActivity(Intent(this,AddProductComputerCaseActivity::class.java))
         }
         computer_parts_activity_headphone_container_layout.setOnClickListener(){
             addProductActivity(category.headphone,"Headphone")
