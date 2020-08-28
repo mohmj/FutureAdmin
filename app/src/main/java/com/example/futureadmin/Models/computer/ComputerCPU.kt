@@ -5,7 +5,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 class ComputerCPU(
-    var productNumbrer:String,
+    var productNumber:String,
     var name : String,
     var category : String,
     var  price : Double,

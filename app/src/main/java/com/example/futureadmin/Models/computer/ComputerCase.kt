@@ -6,7 +6,7 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 
 class ComputerCase (
-    var productNumbrer:String,
+    var productNumber:String,
     var name : String,
     var category : String,
     var  price : Double,
