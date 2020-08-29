@@ -80,7 +80,7 @@ class AddProductComputerCaseActivity : AppCompatActivity() {
             var quantity=add_product_computer_case_quantity_activity_edit_text.text.toString().toInt()
             var description=add_product_computer_case_activity_description_edit_text.text.toString()
 
-            var storageReference=Firebase.storage.getReference("computer/case/$productNumber")
+            var storageReference=Firebase.storage.getReference("products/computer/case/$productNumber")
             var databaseReference=Firebase.database.getReference("products/computer/case/$productNumber")
 
             storageReference.putFile(selectImageUri!!).addOnSuccessListener {

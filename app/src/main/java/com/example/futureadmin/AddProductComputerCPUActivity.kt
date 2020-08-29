@@ -71,7 +71,7 @@ class AddProductComputerIntelCPUActivity : AppCompatActivity() {
 
             var productNumber=Firebase.database.getReference("products/computer/CPU").push().key.toString()
             var databaseReference=Firebase.database.getReference("products/computer/CPU/$productNumber")
-            var storageReference=Firebase.storage.getReference("computer/CPU/$productNumber")
+            var storageReference=Firebase.storage.getReference("products/computer/CPU/$productNumber")
             storageReference.putFile(selectImageUri!!).addOnSuccessListener {
                 storageReference.downloadUrl.addOnSuccessListener {
                     var imageLink=it.toString()

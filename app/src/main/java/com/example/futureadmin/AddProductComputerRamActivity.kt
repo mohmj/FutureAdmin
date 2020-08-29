@@ -97,7 +97,7 @@ class AddProductComputerRamActivity : AppCompatActivity() {
             var CASLatency=add_product_RAM_activity_CAS_latency_edit_text.text.toString().toInt()
 
             var productNumber= Firebase.database.getReference("computer/RAM").push().key.toString()
-            var storageReference=Firebase.storage.getReference("computer/RAM/$productNumber")
+            var storageReference=Firebase.storage.getReference("products/computer/RAM/$productNumber")
             var databaseReference=Firebase.database.getReference("products/computer/RAM/$productNumber")
 
             storageReference.putFile(selectImageUri!!).addOnSuccessListener {
