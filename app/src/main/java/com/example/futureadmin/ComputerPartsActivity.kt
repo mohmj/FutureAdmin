@@ -30,7 +30,7 @@ class ComputerPartsActivity : AppCompatActivity() {
             startActivity(Intent(this,AddProductComputerRamActivity::class.java))
         }
         computer_parts_activity_hardDisk_container_layout.setOnClickListener(){
-            addProductActivity(category.hard_disk,"Hard disk")
+            addProductActivity(category.memory,"Memory")
         }
         computer_parts_activity_waterCooling_container_layout.setOnClickListener(){
             addProductActivity(category.water_cooler,"Water cooling")

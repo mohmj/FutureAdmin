@@ -8,7 +8,7 @@ class Categories {
     var GPU="GPU"
     var motherboard="motherboard"
     var RAM="RAM"
-    var hard_disk="hard_disk"
+    var memory="memory"
     var water_cooler="water_cooler"
     var air_cooler="air_cooler"
     var case="case"
