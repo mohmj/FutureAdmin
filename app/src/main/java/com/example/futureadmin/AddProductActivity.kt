@@ -38,7 +38,7 @@ class AddProductActivity : AppCompatActivity() {
             var productPrice = add_product_activity_price_edit_text.text.toString().toString()
             var productDescription = add_product_activity_description_edit_text.text.toString()
             var quantity=add_product_activity_quantity_edit_text.text.toString()
-            var storageReference = Firebase.storage.getReference("$productCategory/$productNumber")
+            var storageReference = Firebase.storage.getReference("products/$productCategory/$productNumber")
             var databaseReference=Firebase.database.getReference("products/$productCategory/$productNumber")
             if (productName.isNotEmpty() && productPrice.isNotEmpty() && productDescription.isNotEmpty() && quantity.isNotEmpty()) {
                 storageReference.putFile(selectImageUri!!).addOnSuccessListener {

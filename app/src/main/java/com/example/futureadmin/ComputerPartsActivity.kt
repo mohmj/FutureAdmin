@@ -32,12 +32,10 @@ class ComputerPartsActivity : AppCompatActivity() {
         computer_parts_activity_hardDisk_container_layout.setOnClickListener(){
             addProductActivity(category.memory,"Memory")
         }
-        computer_parts_activity_waterCooling_container_layout.setOnClickListener(){
-            addProductActivity(category.water_cooler,"Water cooling")
+        computer_parts_activity_CPU_cooler_container_layout.setOnClickListener(){
+            startActivity(Intent(this,AddProductComputerCoolerActivity::class.java))
         }
-        computer_parts_activity_airCooling_container_layout.setOnClickListener(){
-            addProductActivity(category.air_cooler,"Air cooling")
-        }
+
         computer_parts_activity_cases_container_layout.setOnClickListener(){
             startActivity(Intent(this,AddProductComputerCaseActivity::class.java))
         }

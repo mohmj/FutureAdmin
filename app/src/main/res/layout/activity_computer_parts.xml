@@ -154,7 +154,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
 
-                android:id="@+id/computer_parts_activity_waterCooling_container_layout"
+                android:id="@+id/computer_parts_activity_CPU_cooler_container_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -167,27 +167,6 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="Water cooling"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/computer_parts_activity_airCooling_container_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/profile_activity_item">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="Air cooling"
                     android:textColor="@android:color/black"
                     android:textSize="24sp"
                     app:layout_constraintBottom_toBottomOf="parent"
